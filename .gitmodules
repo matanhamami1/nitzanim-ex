@@ -1,0 +1,3 @@
+[submodule "nitzanim-ex"]
+	path = nitzanim-ex
+	url = git@github.com:lidorg-dev/nitzanim-ex.git
