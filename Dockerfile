@@ -1,8 +1,9 @@
 #Deriving the 3.8.2 base image
 FROM python:3.8.2
+WORKDIR /app
 ENV FLASK_APP=flaskr
 ENV FLASK_ENV=development
-COPY . .
+COPY src/app /app
 RUN pip install --editable .
 RUN flask init-db
 EXPOSE 5000
